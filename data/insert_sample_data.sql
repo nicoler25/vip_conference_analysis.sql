@@ -1,22 +1,93 @@
 -- ============================================================
--- Sample Data: VIP Conference Dataset
+-- VIP Conference Dataset
 -- ============================================================
 
 INSERT INTO vips VALUES
-(2814, 'Fletcher', 'David', 5, 3742, 'Anishinabek Educational Institute', 'education', 2004),
-(1944, 'Kim', 'Jiho', 4, 4230, 'Appalachian State', 'education', 1991),
-(3889, 'Kowalski', 'Alex', 9, 3460, 'Brigg & McKinnnon AEC', 'private', 2015);
+(2814, 'Fletcher', 'David', 5, 3742, 'Anishinabek Educational Institute', 'education', 2004)
+,(1944, 'Kim', 'Jiho', 4, 4230, 'Appalachian State', 'education', 1991)
+,(3889, 'Kowalski', 'Alex', 9, 3460, 'Brigg & McKinnnon AEC', 'private', 2015)
+,(3775, 'Al-Hassan', 'Amina', 6, 3891, 'California Department of Water Resources', 'government', 2013)
+,(4003, 'Chang', 'Nathan', 8, 3960, 'Chang Engineers, LLC', 'private', 2017)
+,(3490, 'Anderson', 'Shanae', 2, 4315, 'Chicago Department of Public Health', 'government', 2008)
+,(3077, 'Murphy', 'Aisling', 3, 2731, 'Climate Impacts on Farming Institute', 'research', 2006)
+,(3960, 'Ivanov', 'Dmitri', 6, 2814, 'Cooperative Institute for Climate, Ocean, and Ecosystem Studies', 'research', 2016)
+,(4402, 'Bennett', 'Leah', NULL, NULL, 'Denver Climate Research Foundation', 'research', 2024)
+,(3891, 'Roy', 'Harper', 4, 3077, 'Environmental Science Associates', 'private', 2015)
+,(4386, 'Silva', 'Thiago', NULL, NULL, 'Everglades Research Institute', 'research', 2023)
+,(4297, 'Chukwu', 'Ifeoma', 9, 2716, 'Georgia State University', 'education', 2020)
+,(3189, 'Martinez', 'Isabella', 8, 2011, 'Iowa State University', 'education', 2007)
+,(3491, 'Gonzalez', 'Victor', 5, 3047, 'McGill University', 'education', 2008)
+,(3742, 'Brown', 'Timothy', 3, 3490, 'Michigan State University', 'education', 2012)
+,(4361, 'Riley', 'Daniel', 6, 1944, 'Minnesota Water Board', 'education', 2023)
+,(1934, 'Garcia', 'Mateo', NULL, NULL, 'Oklahoma Department of Wildlife Conservation', 'government', 1990)
+,(2011, 'Patel', 'Anika', 7, 3491, 'Renewable Energy Research Center, Honolulu', 'research', 1995)
+,(4315, 'Shepherd', 'Priya', 10, 4003, 'Tech517', 'private', 2022)
+,(1738, 'Johnson', 'Denny', NULL, NULL, 'Texas Department of Conservation and Natural Resources', 'government', 1987)
+,(4230, 'Parker', 'Moss', 2, 3719, 'University of California, Davis', 'education', 2019)
+,(2731, 'Rivera', 'Juan', 1, 4297, 'University of Montana', 'education', 2003)
+,(2091, 'Haines', 'Keisha', 11, 3189, 'University of North Carolina', 'education', 1998)
+,(2551, 'Nguyen', 'Linh', 2, 2091, 'University of Pennsylvania', 'education', 2002)
+,(3047, 'Singh', 'Aarav', 4, 2551, 'US Department of Fish and Wildlife', 'government', 2005)
+,(4112, 'Fernandez', 'Lucia', NULL, NULL, 'US Department of Fish and Wildlife', 'government', 2018)
+,(3719, 'Denton', 'K. L.', 11, 3889, 'US Department of Housing and Urban Development', 'government', 2011)
+,(3460, 'Chen', 'Beverly', 7, 4361, 'US Department of Natural Resources', 'government', 2008)
+,(2716, 'Rodriguez', 'Sofia', 7, 3775, 'US Department of Renewable Energy', 'government', 2003)
+,(2800, 'Lee', 'Min-Jun', NULL, NULL, 'US Department of Renewable Energy', 'government', 2004)
+;
+
 
 INSERT INTO reservations VALUES
-(2814, 3, 1, 1),
-(1944, 1, 0, 1),
-(3889, 3, 1, 1);
+ (3491,  1, 1, 1)
+,(4361,  1, 1, 1)
+,(3047,  2, 1, 1)
+,(3775,  1, 1, 1)
+,(4003,  3, 0, 1)
+,(4402,  2, 1, 1)
+,(3891,  3, 1, 1)
+,(2011,  1, 1, 1)
+,(4808,  2, 1, 1)
+,(3490,  1, 0, 1)
+,(3189,  1, 1, 1)
+,(1944,  1, 0, 1)
+,(2716,  2, 0, 1)
+,(2551,  2, 1, 1)
+,(4386,  2, 0, 1)
+,(2814,  3, 1, 1)
+,(1738,  2, 0, 1)
+,(3960,  1, 1, 1)
+,(4315,  3, 1, 0)
+,(4722,  2, 1, 1)
+,(2731,  3, 1, 1)
+,(2091,  1, 1, 0)
+,(3889,  3, 1, 1)
+,(3742,  2, 0, 1)
+,(3719,  2, 0, 1)
+,(3460,  2, 1, 1)
+,(3077,  2, 0, 1)
+,(4420,  1, 1, 0)
+,(2800,  2, 0, 1)
+,(1934,  3, 1, 1)
+;
+
 
 INSERT INTO events VALUES
-(4, 'Biodiversity and Ecosystem Services', 'Panel'),
-(5, 'Indigenous Knowledge and Climate Change Adaptation', 'Panel'),
-(9, 'Economic Impact of Climate Change', 'Panel');
+  (1, 'Climate Change Communication: Engaging the Public and Policy Makers', 'Keynote')
+, (2, 'Climate Change and Public Health: Risks and Responses', 'Panel')
+, (3, 'Climate Change and Agriculture: Ensuring Food Security', 'Panel')
+, (4, 'Biodiversity and Ecosystem Services in a Changing Climate', 'Panel')
+, (5, 'Indigenous Knowledge and Climate Change Adaptation', 'Panel')
+, (6, 'The Role of Oceans in Climate Change: Impacts and Solutions', 'Panel')
+, (7, 'Climate Change and Renewable Energy: Innovations and Challenges', 'Panel')
+, (8, 'Climate Justice and Equity: Addressing Disproportionate Impacts', 'Panel')
+, (9, 'The Economic Impact of Climate Change: Costs and Opportunities', 'Panel')
+, (10, 'Technological Innovations for Climate Monitoring and Assessment', 'Workshop')
+, (11, 'Urban Resilience: Designing Climate-Smart Cities', 'Workshop')
+, (12, 'The Role of Policy in Combating Climate Change', 'Workshop')
+;
+
 
 INSERT INTO hotels VALUES
-(1, 'Hyatt Downtown', '392 South Main Street'),
-(3, 'Four Seasons', '900 Winter Road');
+   (1, 'Hyatt Downtown', '392 South Main Street, Cityville, PA')
+ , (2, 'Marriott', '1240 Marshall Avenue, Cityville, PA')
+ , (3, 'Four Season''s', '900 Winter Road, Cityville, PA')
+ ;
