@@ -1,43 +1,31 @@
-# VIP Conference Analytics – SQL Joins & Subqueries
+# VIP Conference Analytics | SQL Case Study
 
-## Executive Summary:
-Conference organizers need clear visibility into attendee engagement, event participation, and logistics to run successful events. Using SQL, I analyzed a fictional VIP conference dataset to identify attendee relationships, track hotel reservation status, and evaluate event participation patterns.
+## Overview
+This SQL case study analyzes VIP conference attendance, hotel reservations, RSVP behavior, and attendee relationships using a course-provided relational dataset. The project applies joins, self-joins, aggregations, and subqueries to answer business questions and support conference planning decisions.
 
-This analysis showed how relational data can help event teams better understand guest engagement and improve planning. Key findings included identifying VIP peer feedback connections, highlighting which events had stronger attendance, and spotting RSVP behavior differences across event types.
+## Tools Used
+- SQL
+- PostgreSQL
+- Excel
 
-### Business Problem:
-For conference organizers, attendee experience depends on more than just registration counts. Teams need to understand who is actively engaged, which guests still need logistical support, and which events generate the strongest participation.
+## Dataset Snapshot
+- 30 VIP members
+- 30 reservation records
+- 12 conference events
+- 3 hotels
 
-How can we use relational event data to identify engagement patterns, improve guest planning, and better understand conference participation?
+## Key Findings
+- Events 2, 4, 6, and 7 had the highest attendance, with 3 attendees each
+- Marriott had the highest reservation volume
+- 17 attendees RSVP’d yes to both the welcome event and dinner
+- 6 VIPs were not assigned to an event
+- 3 VIPs did not have a matching reservation record
+- 3 reservation records did not match a VIP in the attendee table
 
-### Methodology:
-1. Built SQL queries using joins, self-joins, and subqueries to combine information across VIP attendees, events, reservations, and RSVP activity.
-2. Analyzed peer-to-peer attendee relationships to understand VIP engagement.
-3. Compared attendance across events to identify higher-interest programming.
-4. Reviewed reservation and RSVP patterns to surface logistical and planning insights.
+## Project Visuals
+![Attendees by Event](images/attendees-by-event.png)
+![Reservations by Hotel](images/reservations-by-hotel.png)
+![RSVP Breakdown](images/rsvp-breakdown.png)
 
-### Skills:
-**SQL:** INNER JOIN, LEFT JOIN, SELF JOIN, subqueries, aggregate functions, relational querying
-
-**Analytics:** business problem solving, event participation analysis, engagement analysis, operational reporting
-
-### Results & Business Recommendations:
-This analysis showed that relational SQL queries can help event organizers answer practical business questions across both engagement and logistics.
-
-The project identified:
-- Which VIP attendees were connected through peer feedback relationships
-- Which guests had hotel reservations confirmed and which did not
-- Which events performed above average in attendance
-- Which attendees RSVP’d for some events but not others
-
-Based on these findings, event organizers could:
-1. Use attendee relationship data to identify highly engaged VIPs for networking or ambassador-style roles
-2. Prioritize support for guests without confirmed hotel reservations
-3. Review the structure or timing of lower-attendance events
-4. Use RSVP behavior to better understand event interest and improve future scheduling
-
-### Next Steps:
-1. Add visual reporting for attendance and RSVP patterns
-2. Create a dashboard to monitor guest engagement and logistics in one place
-3. Expand the dataset to include additional event outcomes such as check-in completion or post-event feedback
-
+## Skills Demonstrated
+SQL, joins, subqueries, aggregation, data validation, relational databases, business analysis
