@@ -1,6 +1,4 @@
 -- VIP Conference Analytics | SQL Case Study
--- SQL analysis aligned to README business questions
--- Database: PostgreSQL
 
 /* 
 Business Question 1:
